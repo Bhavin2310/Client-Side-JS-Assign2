@@ -1,1 +1,108 @@
+/*styles.css */
+/*page setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* reset for full-width */
+    padding: 0;
+    background-image: url('./Img/smoothie1.jpg'); /*default backgroung img */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
 
+/* main content */
+.content-wrapper {
+    max-width: 700px; /* keep the content centered */
+    margin: 0 auto;
+    padding: 25px;
+    background: rgba(155, 160, 180, 0.519);
+    border-radius: 20px;
+}
+
+/* header */
+h1 {
+    color: #ff5722; /* orange */
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+    margin-bottom: 35px;
+}
+
+/*form styling */
+form {
+    background-color: #ffffffaf;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffccbc; /* light peach colour for borders */
+}
+
+/* section header */
+h3 {
+    color: #388e3c;
+    font-size: 1.6em;
+    margin: 20px 0 12px 0;
+}
+
+/* labels */
+label {
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 6px;
+    accent-color: #f06292; /*florocent pink */
+}
+
+input[type="text"], select {
+    padding: 10px;
+    border: 2px solid #4fc3f7; /* light blue */
+    border-radius: 6px;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* button */
+button {
+    background: #ff7043;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* output sect */
+#smoothieOutput {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #5e35b1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f8e9; 
+    border-radius: 15px;
+    border: 2px dashed #c5e1a5;
+    animation: fadeIn 0.5s ease-in; 
+}
+
+#smoothieOutput img {
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 4px solid #f06292;
+}
